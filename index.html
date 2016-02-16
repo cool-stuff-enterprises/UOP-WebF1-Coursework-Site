@@ -6,6 +6,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
 	<link href='https://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="js/instafeed.min.js"></script>
@@ -79,8 +82,8 @@
 			<div class="divider__title">Validate me</div>
 			<div class="divider__line"></div>
 		</div>
-		<a href=""><h2>I heard you like HTML5 Validation</h2></a>
-		<a href=""><h2>What about CSS3 Validation?</h2></a>
+		<a href="http://validator.w3.org/check?uri=referer"><h2>I heard you like HTML5 Validation</h2></a>
+		<a href="http://jigsaw.w3.org/css-validator/check/referer/"><h2>What about CSS3 Validation?</h2></a>
 	</div>
 
 	<footer>
@@ -107,17 +110,5 @@
 	</footer>
 </body>
 
-
-<script type="text/javascript">
-    var feed = new Instafeed({
-    	clientId: '467ede5a6b9b48ae8e03f4e2582aeeb3',
-        get: 'user',
-        userId: '46078172',
-        filter: function(image) {
-            return image.tags.indexOf('TAG_NAME') >= 0;
-        }
-    });
-    feed.run();
-</script>
 
 </html>
