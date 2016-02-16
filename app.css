@@ -15,18 +15,31 @@ a {
 }
 
 header.landing {
-	height: 100vh;
+	max-height: 100vh;
 	width: auto;
 	overflow: hidden;
 	position: relative;
 	color: white;
-	background: url('images/background.jpeg') no-repeat;
+	/*background: url('images/background.jpeg') no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
-	background-color: #464646;
+	background-color: #464646;*/
 
 }
 
+header video {
+	
+	width: 100%;
+	height: auto;
+}
+
+#validator h2 {
+	margin-top: 20px;
+}
+
+#validator a:hover {
+	text-decoration: underline;
+}
 /*
 	GLOBAL
  */
@@ -148,14 +161,14 @@ header nav ul li a:hover {
 	cursor: pointer;
 }
 
-.header__shevron i {
+.header__shevron {
 	opacity: 0.7;
 	transition: opacity,font-size 1s;
 }
 
-.header__shevron i:hover {
+.header__shevron:hover {
 	opacity: 1;
-	font-size: 3.2em;
+	font-size: 1.2em;
 }
 
 /*
@@ -186,31 +199,34 @@ footer {
 
 .footer__top {
 	width: 100%;
+	height: 15%;
 	background: #535253;
 }
 
 .footer__twitter {
 	max-width: 960px;
 	margin: auto;
-	height: 70px;
-	line-height: 70px;
+	height: 100%;
+	line-height: 60px;
 }
 
 .footer__content {
 	max-width: 960px;
-	margin: auto;
+	height: 85%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.content__left {
+.content__left{
+	
+}
+
+.content__left{
 	width: 50%;
-	float: left;
 }
-
-.content__right {
-	width: 50%;
-	float: right;
-}
-
 
 
 

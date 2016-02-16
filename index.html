@@ -8,7 +8,7 @@
 
 	<link href='https://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
+	<script type="text/javascript" src="js/instafeed.min.js"></script>
 	<link rel="stylesheet" href="app.css">
 </head>
 <body>
@@ -29,7 +29,14 @@
 
 
 		</div>
-		<div class="header__shevron"><i class="fa fa-chevron-down fa-3x"></i></div>
+		<div class="header__shevron">
+			<i class="fa fa-chevron-down fa-3x"></i>
+			<div class="scroll_text">Scroll</div>
+		</div>
+		<video autoplay loop muted>
+		  <source src="video/video.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+		</video>
 	</header>
 
 	<div id="about" class="container">
@@ -50,7 +57,7 @@
 
 	<div id="images" class="container">
 		<div class="divider divider-right">
-			<div class="divider__title">Photography</div>
+			<div class="divider__title">Some Images</div>
 			<div class="divider__line"></div>
 		</div>
 		<p>I need something to fill this space so I’m gonig to use some fancy images from Instagram.</p>
@@ -67,6 +74,15 @@
 		</div>
 	</div>
 
+	<div id="validator" class="container">
+		<div class="divider divider-right">
+			<div class="divider__title">Validate me</div>
+			<div class="divider__line"></div>
+		</div>
+		<a href=""><h2>I heard you like HTML5 Validation</h2></a>
+		<a href=""><h2>What about CSS3 Validation?</h2></a>
+	</div>
+
 	<footer>
 		<div class="footer__top">
 			<div class="footer__twitter">
@@ -80,7 +96,7 @@
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos labore sit culpa qui necessitatibus eligendi? Reprehenderit nulla esse, deserunt dolores blanditiis illo, iure neque minus amet? Repudiandae sed animi voluptas!
 				</p>
 			</div>
-			<div class="content_right">
+			<div class="content__right">
 				<ul>
 					<li><a href="#">Home</a></li>
 					<li><a href="#">Lit Review</a></li>
@@ -90,5 +106,18 @@
 		</div>
 	</footer>
 </body>
+
+
+<script type="text/javascript">
+    var feed = new Instafeed({
+    	clientId: '467ede5a6b9b48ae8e03f4e2582aeeb3',
+        get: 'user',
+        userId: '46078172',
+        filter: function(image) {
+            return image.tags.indexOf('TAG_NAME') >= 0;
+        }
+    });
+    feed.run();
+</script>
 
 </html>
