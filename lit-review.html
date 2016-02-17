@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Foundations Courswork Site </title>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+	<link href='https://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="js/instafeed.min.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+	<header>
+		<div class="header__container">
+			<nav> 
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/lit-review.html">Lit Review</a></li>
+					<li><a href="/work-log.html">Work Log</a></li>
+				</ul>
+			</nav>
+			
+			<div class="header__info">
+				<h1>Literature Review</h1>
+			</div>
+		</div>
+	</header>
+
+	<div id="lit" class="container">
+		<div class="divider divider-left">
+			<div class="divider__title">LR</div>
+			<div class="divider__line"><span></span></div>
+		</div>
+
+		<p>
+			The computational power of computers has always been significant. However, it continues to grow at an exponential rate. With this comes changes in how we manage the energy involved. Within portable devices such as: phones, tablets and laptops, better power management generates a longer usage on a single power cycle and a longer life of the connected battery. Larger, cloud based or high performance systems (HPC) can also benefit from smart power management with more efficient systems that contribute to saving money and protecting the environment. Since 2012, a datacentre that uses $1 million (£650,000, November 15) in power for its machines will incur another $1 million bill just for cooling.  (Zomaya, Albert Y., and Lee, Young-Choon, 2012, Page 40). Thus, how do we efficiently design and manage the power and energy constraints without negatively impacting overall performance?
+
+		</p>
+
+		<p>
+			In general computing (Office/Home desktop computers) one of the main approaches to saving energy involves physically switching off devices such as desktops and screens. In a case study carried out by the Sheffield Teaching Hospital, the software PowerMAN was used to switch off a computer within the trust after it had been inactive for twenty minutes. It is estimated that with the enhancement of this software, a saving of almost £60,000 per annum was achieved (Mccartney K., 2015). This type of aggressive power conservation can provide an easy solution within organisations that have a large volume of desktop computers. However, Mccartney advocated around the clock services, such as the NHS, rely on computer shutdowns causing as little impact as possible. A fine balance between energy conservation and computer availability and performance to key workers should be maintained to ensure a shutdown is avoided. Patient wellbeing and health would be compromised if a shutdown were to occur at the wrong time. Ultimately, lives could be endangered if this equilibrium was not achieved successfully. 
+
+		</p>
+
+		<p>
+			It can be assumed that most individuals whom have access to an Internet enabled device will have been exposed to the phrase ‘the cloud’. However, many fail to establish an understanding of what it actually involves. Companies refer and portray this technology as “green”. According to Greenpeace, these claims lack convincing evidence due to a large deficiency of transparency and poor metrics for measuring performance and environmental impact. An article from Berkeley Lab explains why these metrics are poor. It states “The Power Usage Effectiveness (PUE) metric has been used for years to determine how much of the power in a data centre is consumed by the IT equipment (as opposed to other facility loads such as cooling and power distribution)” (Berkeley Lab. 2013.). Although this type of metric works it doesn’t accommodate other sources of energy draw. With this in mind, two new metrics have been created, ITUE (IT-Power usage effectiveness) and TUE (Total-power usage effectiveness). ITUE is similar to the previous, older metric but instead it simply monitors the internal components and their power draw. TUE has the capacity to combine the two for a total efficiency picture. (Patterson. K., Pool. S, Hsu. C., Maxwell. D., Tschudi. W., Coles. H., Martinez. D., Bates. N. 2011.). This monitoring system is currently in use within the Jaguar super-computer. Thus, allowing a clearer understanding of the true power draw of a HPC system. Even with new monitoring solutions, in 2007 it was calculated that “if Cloud computing was a country, it would have the fifth largest electricity demand in the world” (Greenpeace. 2012. p. 10). 
+
+		</p>
+
+		<p>
+			All types of computing involve some kind of algorithm – To a human brain an algorithm that takes five minutes to solve is less taxing than one that does exactly the same, but is more complicated and takes double the time. In the majority of cases this is the same in the computing world. A faster algorithm will consume less energy than one that does the same but in double the time. However, Bayer and Nebel (2009, p.1) produced a paper that advocates that different algorithms cannot follow the same conventions. Their study showed that slower algorithms could consume less energy at some input sizes compared to faster ones. The paper went into detail, showing that different instructions are carried out by different parts of the processor. As one would assume, not all parts of the processor are used for every instruction. Therefore, switching them off until they are required is more desirable than them being left on to draw power; if a running algorithm is switching these sections of the processor on and off, this can lead to a larger energy draw. 
+
+		</p>
+
+		<p>
+			There are many levels to conserving energy usage within computing, not only do computers need to be less power hungry and more efficient, but also we need to approach computing in a more sustainable and methodical way. As well as engineering ways to lessen the energy usage of any given device or computer we must consider where the power used is coming from. Although the average consumer does not have control over this. Cloud computing providers can make significant improvements to the way datacentres are designed with the average lifecycle of a datacentre being between 10 and 15 years (Emmerson Network Power, n.d, p1) and the internals expected to be changed at least 3 or 4 times in that time. The growth of computing is inevitable; new ways of tackling energy consumption need to be designed and implemented if sustainability is ever going to be achieved.
+
+		</p>
+
+		<div class="divider divider-right">
+			<div class="divider__title">Reference</div>
+			<div class="divider__line"><span></span></div>
+		</div>
+
+		<ul class="ref">
+			<li>
+				Zomaya, Albert Y., and Lee, Young-Choon. (2012). Parallel and Distributed Computing: Energy Efficient Distributed Computing Systems. IEEE Computer Society Press
+			</li>
+			<li>
+				Katarina Mccartney.  (2015). Be Green – Case Studies. Retrieved from <a href="http://www.sth.nhs.uk/about-us/be-green/case-studies">sth.nhs.uk</a>
+			</li>
+			<li>
+				Greenpeace, Gary Cook. (2012). How Clean is Your Cloud? Retrieved from <a href="http://www.greenpeace.org/international/Global/international/publications/climate/2012/iCoal/HowCleanisYourCloud.pdf
+">Greenpeace.org</a>
+			</li>
+
+			<li>
+				Emersonn Network Power. (n.d). LIFECYCLE COSTING FOR DATA CENTERS: DETERMINING THE TRUE COSTS OF DATA CENTER COOLING. Retrieved from <a href="http://www.emersonnetworkpower.com/documentation/en-us/brands/liebert/documents/white%20papers/lifecycle%20costing%20for%20data%20center_determining%20the%20true%20cost%20of%20data%20centers%20cooling.pdf">emersonnetworkpower.com</a>
+			</li>
+
+			<li>
+				Bayer, H., & Nebel, M. (2009). Evaluating Algorithms according to their Energy
+				Consumption. Retrieved from <a href="http://wwwagak.cs.uni-kl.de/downloads/papers/Evaluating_Algorithms_according_to_their_Energy_Consumption.pdf
+">wwwagak.cs.uni-kl.de</a>
+			</li>
+
+			<li>
+				Berkeley Lab. (2013). Bringing Energy Efficiency to High Performance Computing. Retrieved from <a href="http://eetd.lbl.gov/news/article/56877/bringing-energy-efficiency-to-h">eetd.lbl.gov</a>
+			</li>
+
+			<li>
+				Berkeley Lab. (2011). TUE, a new energy-efficiency metric applied at ORNL's Jaguar. Retrieved from <a href="http://eetd.lbl.gov/sites/all/files/isc13_tuepaper.pdf">eetd.lbl.gov</a>
+			</li>
+		</ul>
+	</div>
+
+
+	<div id="validator" class="container">
+		<div class="divider divider-left">
+			<div class="divider__title">Validate me</div>
+			<div class="divider__line"></div>
+		</div>
+		<a href="http://validator.w3.org/check?uri=referer"><h2>I heard you like HTML5 Validation</h2></a>
+		<a href="http://jigsaw.w3.org/css-validator/check/referer/"><h2>What about CSS3 Validation?</h2></a>
+	</div>
+
+	<footer>
+		<div class="footer__top">
+			<div class="footer__twitter">
+				<i class="fa fa-twitter"></i>
+				<span>"I tweet sometimes"</span>
+			</div>
+		</div>
+		<div class="footer__content">
+			<div class="content__left">
+				<p>
+					This is is the footer - its used for footery things like displaying extra links that don't need to appear in the main menu. The only extra link I've provided is the link to the GitHub source of this site. 
+				</p>
+			</div>
+			<div class="content__right">
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="lit-review.html">Lit Review</a></li>
+					<li><a href="work-log.html">Work Log</a></li>
+					<li><a href="https://github.com/SamStenton/UOP-WebF1-Coursework-Site" target="_blank">Site Source</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</body>
+
+
+</html>
