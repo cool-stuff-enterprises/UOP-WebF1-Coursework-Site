@@ -11,7 +11,8 @@
 
 	<link href='https://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<script type="text/javascript" src="js/instafeed.min.js"></script>
+	<script type="text/javascript" src="js/prism.js"></script>
+	<link rel="stylesheet" href="prism.css">
 	<link rel="stylesheet" href="app.css">
 </head>
 <body>
@@ -30,7 +31,7 @@
 			</div>
 		</div>
 	</header>
-	<div id="work-log" class="container">
+	<div id="work-log" class="container large">
 		<div class="divider divider-left">
 			<div class="divider__title">WL</div>
 			<div class="divider__line"></div>
@@ -39,19 +40,19 @@
 			<div class="menu">
 				<nav>
 					<ul>
-						<a href="#introduction"><li>Introduction</li></a>
-						<a href="#markup"><li>Introduction to Markup</li></a>
-						<a href="#form_content"><li>Separating Form and Content</li></a>
-						<a href="#writing"><li>Academic Writing</li></a>
-						<a href="#literature"><li>Reviewing Literature</li></a>
-						<a href="#media"><li>Using Media</li></a>
-						<a href="#graphics"><li>Graphics on The Web</li></a>
-						<a href="#design"><li>Design</li></a>
-						<a href="#standards"><li>Standards</li></a>
-						<a href="#editors"><li>Productivity and Efficiency: Editors</li></a>
-						<a href="#php"><li>Basic Server Scripting with PHP</li></a>
-						<a href="#usablity"><li>Usability</li></a>
-						<a href="#accessibilty"><li>Accessibilty</li></a>
+						<li><a href="#introduction">Introduction</a></li>
+						<li><a href="#markup">Introduction to Markup</a></li>
+						<li><a href="#form_content">Separating Form and Content</a></li>
+						<li><a href="#writing">Academic Writing</a></li>
+						<li><a href="#literature">Reviewing Literature</a></li>
+						<li><a href="#media">Using Media</a></li>
+						<li><a href="#graphics">Graphics on The Web</a></li>
+						<li><a href="#design">Design</a></li>
+						<li><a href="#standards">Standards</a></li>
+						<li><a href="#editors">Productivity and Efficiency: Editors</a></li>
+						<li><a href="#php">Basic Server Scripting with PHP</a></li>
+						<li><a href="#usablity">Usability</a>
+						<li><a href="#accessibilty">Accessibilty</a>
 					</ul>
 				</nav>
 			</div>
@@ -73,8 +74,19 @@
 				<div id="markup">
 					<h3>Introduction to Markup</h3>
 					<p>
-						In the this second week we were given a lecture on on HTML Markup. 
+						In the this second week we were given a lecture on on HTML Markup. This outlined the basic usage of the language.
 					</p>
+					<pre><code class="language-html">
+&#x3C;!DOCTYPE html&#x3E; &#x3C;!-- Sets the document as HTML5 --&#x3E;
+&#x3C;html&#x3E; &#x3C;!-- Start of HTML tags --&#x3E;
+&#x9;&#x3C;head&#x3E;
+&#x9;&#x9;&#x3C;title&#x3E;&#x3C;/title&#x3E; &#x3C;!-- Anything inside here gets put in the browser title --&#x3E;
+&#x9;&#x3C;/head&#x3E;
+&#x9;&#x3C;body&#x3E;
+&#x9;&#x9;&#x3C;!-- Main Content Goes here --&#x3E;
+&#x9;&#x3C;/body&#x3E;
+&#x3C;/html&#x3E;
+					</code></pre>
 				</div>	
 
 				<div id="form_content">
@@ -102,8 +114,17 @@
 
 	</div>
 
-	<div id="validator" class="container">
+	<div id="validator" class="container large">
 		<div class="divider divider-right">
+			<div class="divider__title">References</div>
+			<div class="divider__line"></div>
+		</div>
+		<p>To display the code on this page I used a JavaScript library that is not my own. You can access that library <a href="http://prismjs.com/">here</a></p>
+		<p>To escape html characters correctly I used a website. You can access that <a href="https://mothereff.in/html-entities">here</a></p>
+	</div>
+
+	<div id="validator" class="container large">
+		<div class="divider divider-left">
 			<div class="divider__title">Validate me</div>
 			<div class="divider__line"></div>
 		</div>
