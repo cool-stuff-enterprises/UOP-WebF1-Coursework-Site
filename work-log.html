@@ -44,7 +44,6 @@
 						<li><a href="#markup">Introduction to Markup</a></li>
 						<li><a href="#form_content">Separating Form and Content</a></li>
 						<li><a href="#writing">Academic Writing</a></li>
-						<li><a href="#literature">Reviewing Literature</a></li>
 						<li><a href="#media">Using Media</a></li>
 						<li><a href="#graphics">Graphics on The Web</a></li>
 						<li><a href="#design">Design</a></li>
@@ -87,34 +86,102 @@
 &#x9;&#x3C;/body&#x3E;
 &#x3C;/html&#x3E;
 					</code></pre>
+
+					<p>In the practical session we continued with using our virtual machines. In the tutorial we were asked to upload our webpage we built to the VM. Instead of FTPing into my machine I decided to instead use Git as I was already familiar with how it worked. First I used the GitHub client to upload my source files then I ran the following command on the virtual machine to download the files.</p>					
+					<pre><code class="language-bash">
+git clone https://github.com/SamStenton/WebF1Site
+					</code></pre>
+
+					<p>Once the code was on the VM I simply have to go in and run the following command to expose the files to the outside world via the IP address shown on the web console.</p>
+
+					<pre><code class="language-bash">
+http-server
+					</code></pre>
 				</div>	
 
 				<div id="form_content">
-					<h3>Introduction to Markup</h3>
+					<h3>Separating Form and Content</h3>
 					<p>
-						In the this second week we were given a lecture on on HTML Markup. 
+						This week we are introduced to Cascading Style Sheets (CSS). By attaching a style sheet to my HTML I am able to change the web page to how I'd like it to look. First I need to create the extra document, I called my <i>app.css</i>. Next I linked the two together by placing a link tag in the head of my HTML.
+
 					</p>
+					<pre><code class="language-html">
+&#x3C;!DOCTYPE html&#x3E;
+&#x3C;html&#x3E;
+&#x3C;head&#x3E;a
+&#x9;&#x3C;title&#x3E;Web Foundations Site &#x3C;/title&#x3E;
+&#x9;&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;app.css&#x22;&#x3E;
+&#x3C;/head&#x3E;
+					</code></pre>
+
+					<p>Once these were linked I was able to style any element on my page</p>
+
+					<pre><code class="language-css">
+div.demo{ 
+	color: red;
+	text-size: 2em;
+	font-weight: bold;
+	background: #fff;
+
+}
+					</code></pre>
+					<p>Which creates the following:</p>
+					<div class="demo">
+						This is the demo text
+					</div>
+
+					<p>Although I have used an external style sheet it is possible to insert CSS style straight into the HTML document.</p>
+
+					<pre><code class="language-html">
+&#x3C;div class=&#x22;demo&#x22; style=&#x22;color: red; text-size: 2em; font-weight: bold;&#x22;&#x3E;
+&#x9;This is the demo text
+&#x3C;/div&#x3E;
+					</code></pre>
+					<p>Or At the top of the document in style tags</p>
+					<pre><code class="language-html">
+&#x3C;style&#x3E;
+&#x9D;    div.demo{ 
+&#x9;    color: red;
+&#x9;    text-size: 2em;
+&#x9;    font-weight: bold;
+&#x9;    background: #fff;	
+    }
+&#x3C;/style&#x3E;
+					</code></pre>
+
+					<p>There are three main types of CSS selectors: IDs, Classes and Block elements. IDs should only be used once -  the official HTML validate will throw an error if it detects more than one ID with the same name. Classes can be used in multiple places on a page. For example if you wanted to keep the same width throughout multiple elements on the page you'd give them all classes. Finally block elements are just HTML elements on the page like &#x3C;body&#x3E; or &#x3C;nav&#x3E;</p>
+
+
 				</div>	
 
 				<div id="writing">
-					<h3>Introduction to Markup</h3>
+					<h3>Academic Writing</h3>
 					<p>
-						In the this second week we were given a lecture on on HTML Markup. 
+					 	Part of the Web Foundations module is to write a literature review. The next lecture an practical was to prepare us for writing the review. The topic to be researched is "Sustainable Computing" which I feel is very broad and I'll be able to find a lot of academic material on the subject. 
 					</p>
 				</div>	
 
-				<div id="literature">
-					<h3>Introduction to Markup</h3>
+				<div id="media">
+					<h3>Using Media</h3>
 					<p>
-						In the this second week we were given a lecture on on HTML Markup. 
+						Media can take many different forms on the web; from images to videos to audio. HTML5 makes consuming media via the web a much easier process with built in tags that allow almost seamless output of formats. 
 					</p>
+					<p>
+						To display an image on a page we use the &#x3C;img&#x3E; tag which includes a src field to the location of the image on the local storage and an alt tag which is used to describe the image.
+					</p>
+					<pre><code class="language-html">
+&#x3C;img src=&#x22;images/background.jpg&#x22; alt=&#x22;The background Image&#x22;&#x3E;
+					</code></pre>
+					<p>The above outputs the following</p>
+					<img src="images/background.jpeg" alt="The background Image" width="50%">
+					<p>The &#x3C;img&#x3E; tag allows some extra attributes within itself. The main ones being width and height. By setting both these attributes you can set the image to an exact size - There can be issues however. If the aspect ratio is changed the image could appear stretched or "smushed"  </p>
 				</div>	
 			</div>
 		</div>
 
 	</div>
 
-	<div id="validator" class="container large">
+	<div id="refrences" class="container large">
 		<div class="divider divider-right">
 			<div class="divider__title">References</div>
 			<div class="divider__line"></div>

@@ -13,6 +13,11 @@ a {
 	text-decoration: none;
 	font-weight: 700;
 }
+
+a:hover {
+	text-decoration: underline;
+}
+
 header {
  height: 150px;
  background: url('images/background.jpeg') no-repeat;
@@ -307,8 +312,14 @@ Lit Review
 .work-log .menu {
 	width: 30%;
 	text-align: left;
-
 	display: block;
+}
+
+.work-log .menu ul {
+	margin-top: 100px;
+}
+.work-log .menu li {
+	margin-top: 20px;
 }
 
 .work-log .content {
@@ -323,4 +334,14 @@ Lit Review
 
 .work-log h3 {	
 	line-height: 4em;
+}
+
+
+.demo {
+	color: red;
+	text-size: 2em;
+	background: #fff;
+	font-weight: bold;
+	padding: 50px;
+	border: 1px dashed black;
 }
