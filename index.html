@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="js/instafeed.min.js"></script>
 	<link rel="stylesheet" href="app.css">
+
 </head>
 <body>
 	<header class="landing">
@@ -30,7 +31,7 @@
 				<p>This site is the product of my studies in the Web Foundation module with a Computer Science Degree at the University of Portsmouth.</p>
 			</div>
 
-			<div class="header__shevron">
+			<div class="header__shevron" id="scroller">
 				<i class="fa fa-chevron-down fa-3x"></i>
 				<div class="scroll_text">Scroll</div>
 			</div>
@@ -41,7 +42,7 @@
 		<video autoplay loop muted>
 		  <source src="video/video.mp4" type="video/mp4">
 		  <!-- <source src="video/video.ogg" type="video/ogg"> -->
-		Your browser does not support the video tag.
+		  Your browser does not support the video tag.
 		</video>
 
 	</header>
@@ -151,6 +152,42 @@
 		</div>
 	</footer>
 </body>
+<script type="text/javascript 	">
+window.scrollTo = (function () {
+  var timer, start, factor;
+  
+  return function (target, duration) {
+    var offset = window.pageYOffset,
+        delta  = target - window.pageYOffset;
+    duration = duration || 250;
+    start = Date.now();
+    factor = 0;
+    
+    if( timer ) {
+      clearInterval(timer);
+    }
+    
+    function step() {
+      var y;
+      factor = (Date.now() - start) / duration;
+      if( factor >= 1 ) {
+        clearInterval(timer);
+        factor = 1;
+      } 
+      y = factor * delta + offset;
+      window.scrollBy(0, y - window.pageYOffset);
+    }
+    
+    timer = setInterval(step, 10);
+    return timer;
+  };
+}());
 
+var scroller = document.getElementById('scroller');
+scroller.addEventListener("click", function(event) {
+    event.preventDefault();
+    scrollTo(document.getElementById('about').offsetTop);
+}, false);
+</script>
 
 </html>

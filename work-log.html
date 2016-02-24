@@ -51,7 +51,7 @@
 						<li><a href="#editors">Productivity and Efficiency: Editors</a></li>
 						<li><a href="#php">Basic Server Scripting with PHP</a></li>
 						<li><a href="#usablity">Usability</a>
-						<li><a href="#accessibilty">Accessibilty</a>
+						<li><a href="#accessibilty">Accessibility</a>
 					</ul>
 				</nav>
 			</div>
@@ -174,8 +174,71 @@ div.demo{
 					</code></pre>
 					<p>The above outputs the following</p>
 					<img src="images/background.jpeg" alt="The background Image" width="50%">
-					<p>The &#x3C;img&#x3E; tag allows some extra attributes within itself. The main ones being width and height. By setting both these attributes you can set the image to an exact size - There can be issues however. If the aspect ratio is changed the image could appear stretched or "smushed"  </p>
+					<p>The &#x3C;img&#x3E; tag allows some extra attributes within itself. The main ones being width and height. By setting both these attributes you can set the image to an exact size - There can be issues however. If the aspect ratio is changed the image could appear stretched or "smushed" </p>
+
+					<p>Before the HTML5 specification is it was very difficult to include video on a web page. This was because not all browsers supported the same implementation. Now there is a universal selector which has brought everything together</p>
+					<p>
+					The &#x3C;video&#x3E; allows the use of multiple formats to support as many browsers and devices as possible. These can be included with the &#x3C;source&#x3E; element within the video. 
+					</p>
+
+					<pre><code class="language-html">
+&#x3C;video controls&#x3E;
+  &#x3C;source src=&#x22;video/video.mp4&#x22; type=&#x22;video/mp4&#x22;&#x3E;
+  &#x3C;source src=&#x22;video/video.ogg&#x22; type=&#x22;video/ogg&#x22;&#x3E;
+  Your browser does not support the video tag.
+&#x3C;/video&#x3E;
+					</code></pre>
+					<p>The above would output the following</p>
+					<video width="100%" controls>
+					  <source src="video/video.mp4" type="video/mp4">
+					  <!-- <source src="video/video.ogg" type="video/ogg"> -->
+					  Your browser does not support the video tag.
+					</video>					
 				</div>	
+
+				<div id="graphics">
+					<h3>Graphics on The Web</h3>
+					<p>With the advent of faster and faster internet the use of Media and Graphics is getting more popular. Along with images and video a large part is now the use of <a href="https://www.w3.org/TR/SVG/">Scalable Vector Graphics</a> which allows the use of Vector images in online media. Vector graphics are nothing new - they've been used in print for many years. The special thing about them is they keep their quality when scaled and have very small file sizes.</p>
+	
+					<ul> 
+						<li>Small file sizes that compress well</li>
+						<li>Scales to any size without losing clarity</li>
+						<li>Looks great on large pixel displays</li>
+						<li>Can be dynamically created</li>
+					</ul>
+	
+					<p>Bellow is the same SVG image just scaled differently. The total size of the image on disk is 25kb (tiny).</p>
+					<div class="svg-container">
+						<img src="images/homer-simpson.svg" alt="" width="50px">
+						<img src="images/homer-simpson.svg" alt="" width="200px">
+						<img src="images/homer-simpson.svg" alt="" width="350px">
+					</div>
+				</div>
+
+				<div id="design">
+					<h3>Design</h3>
+					<p>Any good website will require a design before any actual content can be created. Design doesn't just include how something works questions like: Who is your client? What is the purpose of the site? Who is the target audience? Who is the competition? should be asked. </p>
+				</div>
+
+				<div id="standards">
+					<h3>Standards</h3>
+				</div>
+
+				<div id="editors">
+					<h3>Productivity and Efficiency: Editors</h3>
+				</div>
+
+				<div id="php">
+					<h3>Basic Server Scripting with PHP</h3>
+				</div>
+
+				<div id="usablity">
+					<h3>Usability</h3>
+				</div>
+
+				<div id="accessibilty">
+					<h3>Accessibility</h3>
+				</div>
 			</div>
 		</div>
 

@@ -345,3 +345,12 @@ Lit Review
 	padding: 50px;
 	border: 1px dashed black;
 }
+
+#graphics ul {
+	text-align: left;
+	line-height: 2;
+}
+
+#graphics li {
+	margin-left: 15px;
+}
