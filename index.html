@@ -11,7 +11,6 @@
 
 	<link href='https://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
 	
-	<script type="text/javascript" src="js/instafeed.min.js"></script>
 	<link rel="stylesheet" href="app.css">
 
 </head>
@@ -64,7 +63,7 @@
 		</p>
 
 		<p>
-			Building websites is someting I have enjoyed since I was little. The first site I built was to host a stop-frame animation myself and a friend had created for an English assignment. I have come a long way since then, both in the quality of the sites I produce and my Engish skills.
+			Building websites is something I have enjoyed since I was little. The first site I built was to host a stop-frame animation myself and a friend had created for an English assignment. I have come a long way since then, both in the quality of the sites I produce and my English skills.
 		</p>
 	</div>
 
@@ -73,12 +72,12 @@
 			<div class="divider__title">Some Images</div>
 			<div class="divider__line"></div>
 		</div>
-		<p>I need something to fill this space so I’m gonig to use some fancy images from Instagram.</p>
+		<p>I need something to fill this space so I’m going to use some fancy images from Instagram.</p>
 		<div class="row">
 			<div class="image">
 				<div class="info">
-					<h4>Bedgburry Forrest</h4>
-					<p>Local Forrest near my hometown</p>
+					<h4>Bedgburry Forest</h4>
+					<p>Local Forest near my hometown</p>
 				</div>
 				<img src="images/index/bedgburyforrest.jpg" alt="Bedgburry Forrest">
 			</div>
@@ -156,43 +155,44 @@
 			</div>
 		</div>
 	</footer>
-</body>
-<script type="text/javascript 	">
-window.scrollTo = (function () {
-  var timer, start, factor;
-  
-  return function (target, duration) {
-    var offset = window.pageYOffset,
-        delta  = target - window.pageYOffset;
-    duration = duration || 250;
-    start = Date.now();
-    factor = 0;
-    
-    if( timer ) {
-      clearInterval(timer);
-    }
-    
-    function step() {
-      var y;
-      factor = (Date.now() - start) / duration;
-      if( factor >= 1 ) {
-        clearInterval(timer);
-        factor = 1;
-      } 
-      y = factor * delta + offset;
-      window.scrollBy(0, y - window.pageYOffset);
-    }
-    
-    timer = setInterval(step, 10);
-    return timer;
-  };
-}());
+	<script type="text/javascript 	">
+	// Allows automatic scroll when clicked 
+	window.scrollTo = (function () {
+	  var timer, start, factor;
+	  
+	  return function (target, duration) {
+	    var offset = window.pageYOffset,
+	        delta  = target - window.pageYOffset;
+	    duration = duration || 250;
+	    start = Date.now();
+	    factor = 0;
+	    
+	    if( timer ) {
+	      clearInterval(timer);
+	    }
+	    
+	    function step() {
+	      var y;
+	      factor = (Date.now() - start) / duration;
+	      if( factor >= 1 ) {
+	        clearInterval(timer);
+	        factor = 1;
+	      } 
+	      y = factor * delta + offset;
+	      window.scrollBy(0, y - window.pageYOffset);
+	    }
+	    
+	    timer = setInterval(step, 10);
+	    return timer;
+	  };
+	}());
 
-var scroller = document.getElementById('scroller');
-scroller.addEventListener("click", function(event) {
-    event.preventDefault();
-    scrollTo(document.getElementById('about').offsetTop);
-}, false);
-</script>
+	var scroller = document.getElementById('scroller');
+	scroller.addEventListener("click", function(event) {
+	    event.preventDefault();
+	    scrollTo(document.getElementById('about').offsetTop);
+	}, false);
+	</script>
+</body>
 
 </html>
