@@ -370,7 +370,9 @@ Lit Review
 	border: 1px solid black;
 }
 
-
+#media video {
+	width: 100%;
+}
 nav .mobile {
 	display: none;
 	height: 40px;
