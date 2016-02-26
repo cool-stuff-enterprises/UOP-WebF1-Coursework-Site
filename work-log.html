@@ -143,7 +143,7 @@ div.demo{
 					<p>Or At the top of the document in style tags</p>
 					<pre><code class="language-html">
 &#x3C;style&#x3E;
-&#x9D;    div.demo{ 
+&#x9;    div.demo{ 
 &#x9;    color: red;
 &#x9;    text-size: 2em;
 &#x9;    font-weight: bold;
@@ -176,7 +176,7 @@ div.demo{
 &#x3C;img src=&#x22;images/background.jpg&#x22; alt=&#x22;The background Image&#x22;&#x3E;
 					</code></pre>
 					<p>The above outputs the following</p>
-					<img src="images/background.jpeg" alt="The background Image" width="50%">
+					<img src="images/background.jpeg" alt="The background Image" width="250">
 					<p>The &#x3C;img&#x3E; tag allows some extra attributes within itself. The main ones being width and height. By setting both these attributes you can set the image to an exact size - There can be issues however. If the aspect ratio is changed the image could appear stretched or "smushed" </p>
 
 					<p>Before the HTML5 specification is it was very difficult to include video on a web page. This was because not all browsers supported the same implementation. Now there is a universal selector which has brought everything together</p>
@@ -192,7 +192,7 @@ div.demo{
 &#x3C;/video&#x3E;
 					</code></pre>
 					<p>The above would output the following</p>
-					<video width="100%" controls>
+					<video width="500	" controls>
 					  <source src="video/video.mp4" type="video/mp4">
 					  <!-- <source src="video/video.ogg" type="video/ogg"> -->
 					  Your browser does not support the video tag.
@@ -212,9 +212,9 @@ div.demo{
 	
 					<p>Bellow is the same SVG image just scaled differently. The total size of the image on disk is 25kb (tiny).</p>
 					<div class="svg-container">
-						<img src="images/homer-simpson.svg" alt="" width="50px">
-						<img src="images/homer-simpson.svg" alt="" width="200px">
-						<img src="images/homer-simpson.svg" alt="" width="350px">
+						<img src="images/homer-simpson.svg" alt="Small SVG" width="50">
+						<img src="images/homer-simpson.svg" alt="Medium SVG" width="200">
+						<img src="images/homer-simpson.svg" alt="Large SVG" width="350">
 					</div>
 				</div>
 
