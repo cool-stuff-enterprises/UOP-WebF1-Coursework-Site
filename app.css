@@ -355,8 +355,9 @@ Lit Review
 	line-height: 2;
 }
 
-#graphics li {
+#graphics li, #usablity li{
 	margin-left: 15px;
+	line-height: 2;
 }
 
 #design img {
@@ -364,6 +365,7 @@ Lit Review
 	width: 40%;
 	border: 1px solid black;
 }
+
 
 nav .mobile {
 	display: none;
@@ -383,7 +385,9 @@ nav .mobile span {
 
 }
 
-
+.content-left {
+	text-align: left;
+}
 
 /*Queries*/
 
