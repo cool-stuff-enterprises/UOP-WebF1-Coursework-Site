@@ -1,0 +1,14 @@
+{
+  "name": "webf1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/SamStenton/UOP-WebF1-Coursework-Site",
+  "author": "Samuel Stenton <sthstenton@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
